@@ -108,6 +108,16 @@ export default function Header() {
         .mobile-menu-transition {
           transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
         }
+        .search-results-scrollbar::-webkit-scrollbar {
+          width: 4px;
+        }
+        .search-results-scrollbar::-webkit-scrollbar-track {
+          background: transparent;
+        }
+        .search-results-scrollbar::-webkit-scrollbar-thumb {
+          background: #e5e7eb;
+          border-radius: 10px;
+        }
       `}</style>
 
       <header className="sticky top-0 z-[60] bg-white lg:bg-white/90 lg:backdrop-blur-md border-b border-zinc-100 shadow-md lg:shadow-none">
@@ -124,7 +134,7 @@ export default function Header() {
             />
           </Link>
 
-          {/* Desktop Navigation (Hidden on Mobile) */}
+          {/* Desktop Navigation */}
           <nav className="hidden gap-8 lg:flex items-center">
             {siteConfig.navLinks.map((link) => {
               const hasDropdown = link.label === "Services" || link.label === "Projects";
@@ -209,11 +219,11 @@ export default function Header() {
             })}
           </nav>
 
-          {/* Right Actions (Search + CTA/Hamburger) */}
+          {/* Right Actions */}
           <div className="flex items-center gap-2 lg:gap-6 z-[70]">
-            {/* Desktop Search (Hidden on Mobile) */}
+            {/* Desktop Search */}
             <div ref={searchRef} className="relative hidden lg:block">
-              <div className={`flex items-center bg-zinc-50 border border-zinc-100 rounded-xl transition-all duration-500 ${isSearchOpen ? "w-64 px-4" : "w-11 justify-center"} h-11`}>
+              <div className={`flex items-center bg-zinc-50 border border-zinc-100 rounded-full transition-all duration-500 ${isSearchOpen ? "w-64 px-4" : "w-11 justify-center"} h-11`}>
                 <button 
                   onClick={() => setIsSearchOpen(!isSearchOpen)}
                   className="text-zinc-400 hover:text-green-600 transition-colors"
@@ -235,7 +245,7 @@ export default function Header() {
               {/* Desktop Search Results Dropdown */}
               {isSearchOpen && searchQuery.length >= 2 && (
                 <div className="absolute top-full right-0 w-80 mt-4 bg-white rounded-2xl shadow-2xl shadow-zinc-900/10 border border-zinc-100 overflow-hidden animate-in fade-in slide-in-from-top-2 duration-300">
-                  <div className="p-2">
+                  <div className="p-2 max-h-[400px] overflow-y-auto search-results-scrollbar">
                     {searchResults.length > 0 ? (
                       <div className="flex flex-col">
                         {searchResults.map((result, idx) => (
@@ -268,7 +278,7 @@ export default function Header() {
               )}
             </div>
 
-            {/* Mobile Search Icon */}
+            {/* Mobile Search Toggle */}
             <button 
               onClick={toggleSearch}
               className="lg:hidden p-2 text-zinc-600 hover:text-green-600 transition-colors"
@@ -282,12 +292,12 @@ export default function Header() {
             {/* Desktop CTA */}
             <Link
               href="/contact"
-              className="hidden lg:flex rounded-xl bg-green-700 px-6 py-3 text-[11px] font-black uppercase tracking-[0.2em] text-white transition hover:bg-green-600 shadow-xl shadow-green-900/20"
+              className="hidden lg:flex rounded-full bg-green-700 px-8 py-3.5 text-[11px] font-black uppercase tracking-[0.2em] text-white transition hover:bg-green-600 shadow-xl shadow-green-900/20 active:scale-95"
             >
               Start Project
             </Link>
 
-            {/* Mobile Hamburger Toggle Button */}
+            {/* Mobile Menu Button */}
             <button
               className="lg:hidden p-2 flex flex-col items-center justify-center gap-1.5 focus:outline-none"
               onClick={toggleMenu}
@@ -301,17 +311,64 @@ export default function Header() {
           </div>
         </div>
 
-        {/* Mobile Search Bar Dropdown */}
-        <div className={`lg:hidden overflow-hidden transition-all duration-300 ease-in-out bg-white ${isSearchOpen ? "max-h-20 opacity-100 border-b border-zinc-100" : "max-h-0 opacity-0"}`}>
-          <div className="px-4 py-3">
-            <input
-              ref={searchInputRef}
-              type="text"
-              value={searchQuery}
-              onChange={(e) => setSearchQuery(e.target.value)}
-              placeholder="Search..."
-              className="w-full px-4 py-3 border-none focus:ring-0 text-gray-900 placeholder:text-gray-500 text-lg bg-transparent"
-            />
+        {/* Mobile Search Overlay */}
+        <div className={`lg:hidden overflow-hidden transition-all duration-500 ease-in-out bg-white border-b border-zinc-100 ${isSearchOpen ? "max-h-screen opacity-100" : "max-h-0 opacity-0"}`}>
+          <div className="px-6 py-6 space-y-6">
+            <div className="relative">
+              <input
+                ref={searchInputRef}
+                type="text"
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                placeholder="Search everything..."
+                className="w-full px-6 py-4 bg-zinc-50 border border-zinc-100 rounded-full focus:ring-2 focus:ring-green-500/20 focus:border-green-500 text-gray-900 placeholder:text-gray-400 text-base font-bold outline-none transition-all"
+              />
+              {searchQuery && (
+                <button 
+                  onClick={() => setSearchQuery("")}
+                  className="absolute right-5 top-1/2 -translate-y-1/2 text-zinc-400 p-1"
+                >
+                  <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                </button>
+              )}
+            </div>
+
+            {/* Mobile Search Results */}
+            {searchQuery.length >= 2 && (
+              <div className="space-y-4 max-h-[60vh] overflow-y-auto search-results-scrollbar pb-10">
+                {searchResults.length > 0 ? (
+                  <div className="flex flex-col gap-2">
+                    <p className="text-[10px] font-black uppercase tracking-widest text-zinc-400 px-2">Results ({searchResults.length})</p>
+                    {searchResults.map((result, idx) => (
+                      <Link
+                        key={`${result.label}-${idx}`}
+                        href={result.href}
+                        onClick={() => {
+                          setIsSearchOpen(false);
+                          setSearchQuery("");
+                        }}
+                        className="flex items-center justify-between px-5 py-4 rounded-2xl bg-zinc-50 border border-zinc-100 active:bg-green-50 active:border-green-200 transition-all"
+                      >
+                        <div>
+                          <span className="block text-sm font-bold text-zinc-900">{result.label}</span>
+                          <span className="text-[10px] font-black uppercase tracking-widest text-green-600 mt-1 block">{result.type}</span>
+                        </div>
+                        <svg className="w-4 h-4 text-zinc-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                        </svg>
+                      </Link>
+                    ))}
+                  </div>
+                ) : (
+                  <div className="py-12 text-center bg-zinc-50 rounded-3xl border border-zinc-100">
+                    <p className="text-sm font-bold text-zinc-400">No results found for "{searchQuery}"</p>
+                    <p className="text-xs text-zinc-300 mt-2">Try searching for Solar, Heat Pumps, or projects.</p>
+                  </div>
+                )}
+              </div>
+            )}
           </div>
         </div>
       </header>
@@ -335,10 +392,10 @@ export default function Header() {
             </Link>
             <button
               onClick={() => setIsMenuOpen(false)}
-              className="w-10 h-10 rounded-full border border-white/30 text-white flex items-center justify-center hover:bg-white/10 transition"
+              className="w-12 h-12 rounded-full border border-white/20 text-white flex items-center justify-center hover:bg-white/10 transition active:scale-90"
               aria-label="Close menu"
             >
-              <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <svg className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
               </svg>
             </button>
@@ -353,11 +410,11 @@ export default function Header() {
 
               return (
                 <div key={link.label} className="border-b border-white/10 last:border-0">
-                  <div className="flex items-center justify-between py-4">
+                  <div className="flex items-center justify-between py-5">
                     <Link
                       href={link.href}
                       onClick={() => setIsMenuOpen(false)}
-                      className={`text-lg font-medium transition-colors ${isActive ? "text-green-400" : "text-white"}`}
+                      className={`text-xl font-bold transition-colors ${isActive ? "text-green-400" : "text-white"}`}
                     >
                       {link.label.toUpperCase()}
                     </Link>
@@ -365,11 +422,11 @@ export default function Header() {
                     {hasDropdown && (
                       <button
                         onClick={() => setOpenDropdown(isDropdownOpen ? null : link.label)}
-                        className="p-2"
+                        className="p-3"
                         aria-expanded={isDropdownOpen}
                       >
                         <svg 
-                          className={`w-5 h-5 text-white transition-transform duration-300 ${isDropdownOpen ? "rotate-180" : ""}`} 
+                          className={`w-6 h-6 text-white transition-transform duration-300 ${isDropdownOpen ? "rotate-180" : ""}`} 
                           fill="none" 
                           viewBox="0 0 24 24" 
                           stroke="currentColor"
@@ -384,17 +441,17 @@ export default function Header() {
                   {hasDropdown && (
                     <div 
                       className={`overflow-hidden transition-all duration-300 ease-in-out ${
-                        isDropdownOpen ? "max-h-96 pb-4" : "max-h-0"
+                        isDropdownOpen ? "max-h-96 pb-6" : "max-h-0"
                       }`}
                     >
-                      <div className="pl-4 border-l-2 border-green-500 ml-2 flex flex-col gap-3">
+                      <div className="pl-5 border-l border-green-500/50 ml-2 flex flex-col gap-4">
                         {link.label === "Services" ? (
                           siteConfig.services.map((service) => (
                             <Link
                               key={service.title}
                               href="/services"
                               onClick={() => setIsMenuOpen(false)}
-                              className="text-base text-white/70 hover:text-white transition-colors"
+                              className="text-base text-white/60 hover:text-white transition-colors"
                             >
                               {service.title}
                             </Link>
@@ -405,7 +462,7 @@ export default function Header() {
                               key={project.id}
                               href="/projects"
                               onClick={() => setIsMenuOpen(false)}
-                              className="text-base text-white/70 hover:text-white transition-colors"
+                              className="text-base text-white/60 hover:text-white transition-colors"
                             >
                               {project.title}
                             </Link>
@@ -420,11 +477,11 @@ export default function Header() {
           </nav>
 
           {/* Overlay Bottom CTA */}
-          <div className="mt-auto px-6 pb-10">
+          <div className="mt-auto px-6 pb-12">
             <Link
               href="/contact"
               onClick={() => setIsMenuOpen(false)}
-              className="block w-full py-4 bg-green-600 text-white font-bold rounded-xl text-center text-base active:scale-95 transition"
+              className="block w-full py-5 bg-green-600 text-white font-black text-sm tracking-[0.2em] rounded-full text-center active:scale-95 transition shadow-2xl shadow-green-900/40"
             >
               START PROJECT
             </Link>

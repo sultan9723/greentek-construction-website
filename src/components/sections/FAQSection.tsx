@@ -84,8 +84,8 @@ export default function FAQSection() {
                   <span className="text-lg font-black text-slate-950 pr-8 leading-tight">
                     {item.question}
                   </span>
-                  <span className={`flex-shrink-0 w-8 h-8 rounded-full border border-zinc-200 flex items-center justify-center transition-all duration-500 ${openIndex === index ? 'bg-green-600 border-green-600 text-white rotate-180' : 'bg-white text-zinc-400'}`}>
-                    <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <span className={`flex-shrink-0 w-10 h-10 rounded-full border border-zinc-200 flex items-center justify-center transition-all duration-500 shadow-sm ${openIndex === index ? 'bg-green-600 border-green-600 text-white rotate-180 shadow-green-500/20' : 'bg-white text-zinc-400'}`}>
+                    <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M19 9l-7 7-7-7" />
                     </svg>
                   </span>
