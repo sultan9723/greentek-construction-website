@@ -41,12 +41,15 @@ export default function Header() {
   // Handle scroll lock
   useEffect(() => {
     if (isMenuOpen) {
-      document.body.style.overflow = "hidden";
+      document.body.style.overflowY = "hidden";
+      document.body.style.touchAction = "none";
     } else {
-      document.body.style.overflow = "";
+      document.body.style.overflowY = "";
+      document.body.style.touchAction = "";
     }
     return () => {
-      document.body.style.overflow = "";
+      document.body.style.overflowY = "";
+      document.body.style.touchAction = "";
     };
   }, [isMenuOpen]);
 

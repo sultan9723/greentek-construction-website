@@ -24,8 +24,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.className} antialiased selection:bg-green-100 selection:text-green-900`}>
-        {children}
-        <FloatingActions />
+        <div className="relative flex min-h-screen flex-col overflow-x-hidden">
+          {children}
+          <FloatingActions />
+        </div>
       </body>
     </html>
   );
