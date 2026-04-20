@@ -54,9 +54,9 @@ export default function AccreditationsSection() {
         </div>
       </div>
 
-      {/* ── Dual Row Marquee Strip ── */}
+      {/* ── Desktop Marquee (Hidden on Mobile) ── */}
       <div
-        className="relative border-y border-zinc-100 overflow-hidden py-6 space-y-6"
+        className="hidden md:block relative border-y border-zinc-100 overflow-hidden py-6 space-y-6"
         role="marquee"
         aria-label="Accreditation logos"
       >
@@ -117,7 +117,36 @@ export default function AccreditationsSection() {
         </div>
       </div>
 
-      {/* Marquee keyframes */}
+      {/* ── Mobile Marquee Strip (Hidden on Desktop) ── */}
+      <div className="md:hidden relative w-full overflow-hidden py-4">
+        {/* Edge Fade Masks */}
+        <div 
+          className="absolute inset-y-0 left-0 w-16 z-10 pointer-events-none" 
+          style={{ background: 'linear-gradient(to right, white, transparent)' }}
+        />
+        <div 
+          className="absolute inset-y-0 right-0 w-16 z-10 pointer-events-none" 
+          style={{ background: 'linear-gradient(to left, white, transparent)' }}
+        />
+
+        <div className="mobile-marquee-track">
+          {[...accreditations, ...accreditations].map((logo, idx) => (
+            <div
+              key={`${logo.name}-mobile-${idx}`}
+              className="mobile-logo-card"
+              aria-hidden={idx >= accreditations.length}
+            >
+              <img
+                src={logo.src}
+                alt={logo.name}
+                className="mobile-logo-img"
+              />
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* Styles */}
       <style>{`
         @keyframes marquee-single {
           from { transform: translateX(0); }
@@ -126,6 +155,46 @@ export default function AccreditationsSection() {
         @keyframes marquee-reverse {
           from { transform: translateX(-25%); }
           to { transform: translateX(0); }
+        }
+        @keyframes scrollLeft {
+          from { transform: translateX(0); }
+          to { transform: translateX(-50%); }
+        }
+        .mobile-marquee-track {
+          display: flex;
+          align-items: center;
+          gap: 1.5rem;
+          width: max-content;
+          animation: scrollLeft 25s linear infinite;
+          will-change: transform;
+        }
+        .mobile-marquee-track:active {
+          animation-play-state: paused;
+        }
+        .mobile-logo-card {
+          flex-shrink: 0;
+          width: 7rem;
+          height: 4rem;
+          background-color: white;
+          border-radius: 0.75rem;
+          border: 1px solid #f3f4f6;
+          box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+          display: flex;
+          align-items: center;
+          justify-center: center;
+          padding: 0.75rem;
+        }
+        .mobile-logo-img {
+          max-height: 2rem;
+          width: auto;
+          object-fit: contain;
+          filter: none;
+          opacity: 1;
+          transition: filter 0.3s ease;
+        }
+        .mobile-logo-card:active .mobile-logo-img {
+          filter: none;
+          opacity: 1;
         }
       `}</style>
     </section>
