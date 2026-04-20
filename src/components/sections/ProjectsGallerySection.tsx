@@ -42,10 +42,10 @@ export default function ProjectsGallerySection() {
               <span className="text-green-700">Success.</span>
             </h2>
             <div className="mt-10">
-              <a href="/projects" className="group inline-flex items-center gap-5 text-sm font-bold text-zinc-900">
+              <a href="/projects" className="group inline-flex items-center gap-6 text-[11px] font-black uppercase tracking-[0.2em] text-zinc-900">
                 View All Projects
-                <span className="w-12 h-12 rounded-full bg-zinc-900 text-white flex items-center justify-center group-hover:bg-green-700 transition-all duration-500 shadow-xl shadow-zinc-900/10">
-                  <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
+                <span className="w-14 h-14 rounded-full bg-zinc-900 text-white flex items-center justify-center group-hover:bg-green-700 transition-all duration-500 shadow-xl shadow-zinc-900/10 active:scale-90">
+                  <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
                 </span>
               </a>
             </div>

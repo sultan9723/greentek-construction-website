@@ -56,13 +56,13 @@ export default function HeroSection() {
           <div className="mt-12 flex flex-col sm:flex-row justify-center gap-4 sm:gap-5">
             <a
               href="/services"
-              className="w-full sm:w-auto rounded-xl bg-green-700 px-8 py-4 sm:px-10 sm:py-5 text-xs font-bold text-white transition hover:bg-green-600 shadow-xl shadow-green-900/40 active:scale-95"
+              className="w-full sm:w-auto rounded-full bg-green-700 px-10 py-5 text-xs font-bold text-white transition hover:bg-green-600 shadow-xl shadow-green-900/40 active:scale-95"
             >
               Our Solutions
             </a>
             <a
               href="/contact"
-              className="w-full sm:w-auto rounded-xl border border-white/10 bg-white/5 px-8 py-4 sm:px-10 sm:py-5 text-xs font-bold text-white backdrop-blur-sm transition hover:bg-white/10 active:scale-95"
+              className="w-full sm:w-auto rounded-full border border-white/20 bg-white/5 px-10 py-5 text-xs font-bold text-white backdrop-blur-sm transition hover:bg-white/10 active:scale-95"
             >
               Consult an Expert
             </a>

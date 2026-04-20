@@ -19,13 +19,13 @@ export default function ContactCTASection() {
             <div className="mt-12 flex flex-col sm:flex-row justify-center lg:justify-start gap-5 w-full sm:w-auto">
               <Link 
                 href="/contact" 
-                className="inline-flex items-center justify-center px-8 py-4 sm:px-10 sm:py-5 rounded-xl bg-green-600 text-white text-xs font-bold hover:bg-green-700 transition-all shadow-xl shadow-green-900/20"
+                className="inline-flex items-center justify-center px-10 py-5 rounded-full bg-green-600 text-white text-xs font-bold hover:bg-green-700 transition-all shadow-xl shadow-green-900/20 active:scale-95"
               >
                 Request a Consultation
               </Link>
               <Link 
                 href="/services" 
-                className="inline-flex items-center justify-center px-8 py-4 sm:px-10 sm:py-5 rounded-xl bg-zinc-50 border border-zinc-200 text-zinc-900 text-xs font-bold hover:bg-zinc-100 transition-all"
+                className="inline-flex items-center justify-center px-10 py-5 rounded-full bg-zinc-50 border border-zinc-200 text-zinc-900 text-xs font-bold hover:bg-zinc-100 transition-all active:scale-95"
               >
                 View Our Services
               </Link>
