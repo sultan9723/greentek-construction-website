@@ -328,15 +328,10 @@ export default function Header() {
         <div className="flex flex-col h-full bg-transparent w-full">
           {/* Overlay Header */}
           <div className="flex justify-between items-center px-6 pt-8 pb-6">
-            <Link href="/" onClick={() => setIsMenuOpen(false)}>
-              <div className="relative w-40 h-10">
-                <Image 
-                  src="/images/greenteklogo.jpeg" 
-                  alt="GreenTek" 
-                  fill
-                  className="object-contain filter brightness-0 invert"
-                />
-              </div>
+            <Link href="/" onClick={() => setIsMenuOpen(false)} className="flex items-center">
+              <span className="text-white font-black text-2xl tracking-tight">
+                GREENTEK<span className="text-green-400">.</span>
+              </span>
             </Link>
             <button
               onClick={() => setIsMenuOpen(false)}
