@@ -51,8 +51,8 @@ export default function BrandsSection() {
         </div>
       </div>
 
-      {/* ── Two Row Marquee ── */}
-      <div className="space-y-6">
+      {/* ── Desktop Marquee (Hidden on Mobile) ── */}
+      <div className="hidden md:block space-y-6">
         {/* Row 1 */}
         <div
           className="relative overflow-hidden group py-4"
@@ -118,10 +118,79 @@ export default function BrandsSection() {
         </div>
       </div>
 
+      {/* ── Mobile Marquee Strip (Hidden on Desktop) ── */}
+      <div className="md:hidden relative w-full overflow-hidden py-4">
+        {/* Edge Fade Masks */}
+        <div 
+          className="absolute inset-y-0 left-0 w-16 z-10 pointer-events-none" 
+          style={{ background: 'linear-gradient(to right, white, transparent)' }}
+        />
+        <div 
+          className="absolute inset-y-0 right-0 w-16 z-10 pointer-events-none" 
+          style={{ background: 'linear-gradient(to left, white, transparent)' }}
+        />
+
+        <div className="mobile-brands-track">
+          {[...homepageBrands, ...homepageBrands].map((logo, idx) => (
+            <div
+              key={`${logo.name}-mobile-${idx}`}
+              className="mobile-brand-card"
+              aria-hidden={idx >= homepageBrands.length}
+            >
+              <img
+                src={logo.src}
+                alt={logo.name}
+                className="mobile-brand-img"
+              />
+            </div>
+          ))}
+        </div>
+      </div>
+
       <style>{`
         @keyframes marquee-brands {
           from { transform: translateX(0); }
           to { transform: translateX(-50%); }
+        }
+        @keyframes scrollLeftBrands {
+          from { transform: translateX(0); }
+          to { transform: translateX(-50%); }
+        }
+        .mobile-brands-track {
+          display: flex;
+          align-items: center;
+          gap: 1.5rem;
+          width: max-content;
+          animation: scrollLeftBrands 30s linear infinite;
+          will-change: transform;
+        }
+        .mobile-brands-track:active {
+          animation-play-state: paused;
+        }
+        .mobile-brand-card {
+          flex-shrink: 0;
+          width: 7rem;
+          height: 4rem;
+          background-color: white;
+          border-radius: 0.75rem;
+          border: 1px solid #f3f4f6;
+          box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 0.75rem;
+        }
+        .mobile-brand-img {
+          max-height: 2rem;
+          width: auto;
+          object-fit: contain;
+          filter: none;
+          opacity: 1;
+          transition: filter 0.3s ease;
+        }
+        .mobile-brand-card:active .mobile-brand-img {
+          filter: none;
+          opacity: 1;
         }
       `}</style>
     </section>
