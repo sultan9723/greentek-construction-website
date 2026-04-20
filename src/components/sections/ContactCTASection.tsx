@@ -19,13 +19,13 @@ export default function ContactCTASection() {
             <div className="mt-12 flex flex-col sm:flex-row justify-center lg:justify-start gap-5 w-full sm:w-auto">
               <Link 
                 href="/contact" 
-                className="inline-flex items-center justify-center px-10 py-5 rounded-xl bg-green-600 text-white text-xs font-bold hover:bg-green-700 transition-all shadow-xl shadow-green-900/20"
+                className="inline-flex items-center justify-center px-8 py-4 sm:px-10 sm:py-5 rounded-xl bg-green-600 text-white text-xs font-bold hover:bg-green-700 transition-all shadow-xl shadow-green-900/20"
               >
                 Request a Consultation
               </Link>
               <Link 
                 href="/services" 
-                className="inline-flex items-center justify-center px-10 py-5 rounded-xl bg-zinc-50 border border-zinc-200 text-zinc-900 text-xs font-bold hover:bg-zinc-100 transition-all"
+                className="inline-flex items-center justify-center px-8 py-4 sm:px-10 sm:py-5 rounded-xl bg-zinc-50 border border-zinc-200 text-zinc-900 text-xs font-bold hover:bg-zinc-100 transition-all"
               >
                 View Our Services
               </Link>
@@ -34,7 +34,7 @@ export default function ContactCTASection() {
 
           {/* Right: Compact Contact Card */}
           <div className="lg:justify-self-end w-full max-w-md mx-auto lg:mx-0">
-            <div className="bg-zinc-50 py-12 px-8 md:py-16 md:px-12 rounded-[3rem] border border-zinc-100 shadow-2xl shadow-zinc-200/50">
+            <div className="bg-zinc-50 py-10 px-6 md:py-16 md:px-12 rounded-[3rem] border border-zinc-100 shadow-2xl shadow-zinc-200/50">
               <h3 className="text-xl font-black text-zinc-900 mb-10 tracking-tight">Direct Contact</h3>
               
               <div className="space-y-8">

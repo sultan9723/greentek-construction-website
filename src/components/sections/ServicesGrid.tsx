@@ -9,7 +9,7 @@ export default function ServicesGrid() {
             <p className="text-[10px] font-black uppercase tracking-[0.3em] text-green-700 mb-6">
               Our Expertise
             </p>
-            <h2 className="text-4xl font-black tracking-tight text-zinc-900 md:text-5xl lg:text-6xl leading-[1.1]">
+            <h2 className="text-3xl sm:text-4xl font-black tracking-tight text-zinc-900 md:text-5xl lg:text-6xl leading-[1.1]">
               High-Performance <br />
               <span className="text-green-700">Building Solutions.</span>
             </h2>

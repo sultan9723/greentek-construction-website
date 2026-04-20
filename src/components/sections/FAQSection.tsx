@@ -40,7 +40,7 @@ export default function FAQSection() {
           <p className="text-[10px] font-black uppercase tracking-[0.3em] text-green-600 mb-6">
             Common Inquiries
           </p>
-          <h2 id="faq-heading" className="text-4xl md:text-5xl lg:text-7xl font-black tracking-tight text-slate-950 leading-[1.05]">
+          <h2 id="faq-heading" className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-black tracking-tight text-slate-950 leading-[1.05]">
             Frequently Asked <br /><span className="text-green-600">Questions.</span>
           </h2>
           <div className="w-16 h-1.5 bg-green-600 rounded-full mt-10 mx-auto" />
@@ -55,7 +55,7 @@ export default function FAQSection() {
             >
               <button
                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
-                className="w-full flex items-center justify-between p-6 md:p-8 text-left transition-colors bg-zinc-50/50 hover:bg-white"
+                className="w-full flex items-center justify-between p-5 md:p-8 text-left transition-colors bg-zinc-50/50 hover:bg-white"
                 aria-expanded={openIndex === index}
               >
                 <span className="text-lg font-black text-slate-950 pr-8 leading-tight">
@@ -73,7 +73,7 @@ export default function FAQSection() {
                   openIndex === index ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
                 }`}
               >
-                <div className="p-6 md:p-8 pt-0 text-gray-500 leading-relaxed text-lg border-t border-zinc-50 bg-white">
+                <div className="p-5 md:p-8 pt-0 text-gray-500 leading-relaxed text-base sm:text-lg border-t border-zinc-50 bg-white">
                   {item.answer}
                 </div>
               </div>

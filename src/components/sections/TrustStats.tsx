@@ -14,7 +14,7 @@ export default function TrustStats() {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-12 md:gap-16 lg:gap-24">
           {stats.map((stat, idx) => (
             <div key={idx} className="flex flex-col items-center md:items-start text-center md:text-left group">
-              <div className="text-4xl font-black text-zinc-900 md:text-5xl lg:text-6xl tracking-tighter group-hover:text-green-700 transition-colors duration-500">
+              <div className="text-3xl sm:text-4xl font-black text-zinc-900 md:text-5xl lg:text-6xl tracking-tighter group-hover:text-green-700 transition-colors duration-500">
                 {stat.value}
               </div>
               <p className="mt-4 text-[10px] md:text-xs font-black text-zinc-400 uppercase tracking-[0.2em] leading-tight group-hover:text-zinc-600 transition-colors duration-500">

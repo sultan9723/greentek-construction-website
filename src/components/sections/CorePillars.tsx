@@ -51,10 +51,10 @@ export default function CorePillars() {
           </div>
 
           {/* Compounded Integrated Layout */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 bg-zinc-50/50 rounded-[3rem] p-4 md:p-6 lg:p-8 border border-zinc-100 gap-6 md:gap-10">
+          <div className="grid grid-cols-1 lg:grid-cols-2 bg-zinc-50/50 rounded-[3rem] p-3 sm:p-4 md:p-6 lg:p-8 border border-zinc-100 gap-6 md:gap-10">
             
             {/* Pillar 1: Energy */}
-            <div className="bg-white rounded-[2rem] p-8 md:p-10 shadow-sm border border-zinc-100 group transition-all duration-500 hover:shadow-2xl hover:shadow-green-900/5 hover:-translate-y-1">
+            <div className="bg-white rounded-[2rem] p-6 sm:p-8 md:p-10 shadow-sm border border-zinc-100 group transition-all duration-500 hover:shadow-2xl hover:shadow-green-900/5 hover:-translate-y-1">
               <div className="flex flex-col h-full">
                 <div className="flex items-center gap-4 mb-8">
                   <div className="w-12 h-12 bg-green-600 rounded-xl flex items-center justify-center text-white shadow-lg shadow-green-900/10 group-hover:scale-105 transition-transform duration-500">
@@ -90,7 +90,7 @@ export default function CorePillars() {
             </div>
 
             {/* Pillar 2: Construction */}
-            <div className="bg-white rounded-[2rem] p-8 md:p-10 shadow-sm border border-zinc-100 group transition-all duration-500 hover:shadow-2xl hover:shadow-green-900/5 hover:-translate-y-1">
+            <div className="bg-white rounded-[2rem] p-6 sm:p-8 md:p-10 shadow-sm border border-zinc-100 group transition-all duration-500 hover:shadow-2xl hover:shadow-green-900/5 hover:-translate-y-1">
               <div className="flex flex-col h-full">
                 <div className="flex items-center gap-4 mb-8">
                   <div className="w-12 h-12 bg-slate-900 rounded-xl flex items-center justify-center text-white shadow-lg shadow-zinc-900/10 group-hover:scale-105 transition-transform duration-500">

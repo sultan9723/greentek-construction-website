@@ -65,7 +65,7 @@ function StatCard({ stat, delay }: { stat: typeof stats[0], delay: number }) {
   return (
     <div
       ref={fade.ref}
-      className={`group relative bg-zinc-50 rounded-3xl p-6 md:p-8 border border-zinc-100 transition-all duration-700 hover:bg-white hover:border-green-500/20 hover:shadow-2xl hover:shadow-green-900/5 hover:-translate-y-1 ${
+      className={`group relative bg-zinc-50 rounded-3xl p-5 md:p-8 border border-zinc-100 transition-all duration-700 hover:bg-white hover:border-green-500/20 hover:shadow-2xl hover:shadow-green-900/5 hover:-translate-y-1 ${
         fade.visible ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"
       }`}
     >
@@ -102,7 +102,7 @@ export default function AboutPreview() {
           <p className="text-[10px] font-black uppercase tracking-[0.3em] text-green-600 mb-6">
             About Us
           </p>
-          <h2 className="text-4xl font-black tracking-tight text-zinc-900 md:text-5xl lg:text-7xl leading-[1.05]">
+          <h2 className="text-3xl sm:text-4xl font-black tracking-tight text-zinc-900 md:text-5xl lg:text-7xl leading-[1.05]">
             Leading the Way in <br />
             <span className="text-green-700">Construction & Energy.</span>
           </h2>

@@ -47,7 +47,7 @@ export default function AccreditationsSection() {
           <p className="text-[10px] font-black uppercase tracking-[0.3em] text-green-600 mb-6">
             Verified Excellence
           </p>
-          <h2 id="accreditations-heading" className="text-4xl md:text-5xl lg:text-7xl font-black tracking-tight text-slate-950 leading-[1.05]">
+          <h2 id="accreditations-heading" className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-black tracking-tight text-slate-950 leading-[1.05]">
             Fully Accredited <br />& <span className="text-green-600">Certified.</span>
           </h2>
           <div className="w-16 h-1.5 bg-green-600 rounded-full mt-10 mx-auto" />
