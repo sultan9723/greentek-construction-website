@@ -1,40 +1,35 @@
 export default function HeroSection() {
   return (
-    <section className="relative bg-gradient-to-b from-slate-900 via-slate-800 to-white">
-      <div className="mx-auto max-w-7xl px-6 py-32 md:py-40 lg:py-48">
-        <div className="max-w-3xl">
-          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-green-400">
-            Professional Construction Solutions
-          </p>
-
-          <h1 className="mt-6 text-5xl font-bold tracking-tight text-white md:text-7xl">
-            Building trusted spaces with quality and precision.
+    <section className="relative bg-zinc-900 overflow-hidden border-b border-white/5">
+      <div className="absolute inset-0 bg-[url('/images/hero-bg.jpg')] bg-cover bg-center opacity-20 mix-blend-overlay" />
+      <div className="relative mx-auto max-w-7xl px-6 py-16 md:py-24 lg:py-32 text-center">
+        <div className="max-w-3xl mx-auto">
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-black tracking-tight text-white leading-[1.05]">
+            Bridging <span className="text-green-500">Construction</span> <br />
+            with Renewable Energy.
           </h1>
 
-          <p className="mt-8 max-w-2xl text-lg leading-8 text-slate-300">
-            GreenTek Construction delivers professional building and construction
-            services designed to present your business with credibility, trust,
-            and a strong modern image.
+          <p className="mt-8 text-base md:text-lg lg:text-xl leading-relaxed text-zinc-400 max-w-2xl mx-auto">
+            GreenTek is an agile, multi-disciplinary firm delivering high-performance 
+            building upgrades and low-carbon energy solutions across the UK.
           </p>
 
-          <div className="mt-10 flex flex-wrap gap-4">
+          <div className="mt-12 flex flex-wrap justify-center gap-5">
             <a
-              href="/projects"
-              className="rounded-full bg-green-600 px-8 py-3 text-sm font-semibold text-white transition hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-600 focus:ring-offset-2"
+              href="/services"
+              className="rounded-xl bg-green-700 px-10 py-5 text-xs font-bold text-white transition hover:bg-green-600 shadow-xl shadow-green-900/40"
             >
-              View Our Projects
+              Our Solutions
             </a>
             <a
               href="/contact"
-              className="rounded-full border-2 border-white px-8 py-3 text-sm font-semibold text-white transition hover:bg-white hover:text-slate-900 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2"
+              className="rounded-xl border border-white/10 bg-white/5 px-10 py-5 text-xs font-bold text-white backdrop-blur-sm transition hover:bg-white/10"
             >
-              Get in Touch
+              Consult an Expert
             </a>
           </div>
         </div>
       </div>
-
-      <div className="absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent via-slate-300 to-transparent" />
     </section>
   );
 }

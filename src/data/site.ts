@@ -2,9 +2,20 @@ export const siteConfig = {
   name: "GreenTek Construction",
   description:
     "Professional construction and building solutions with a focus on quality, reliability, and trusted project delivery.",
-  phone: "+44 0000 000000",
-  email: "info@greentekconstruction.com",
+  phone: "0333 533 4567",
+  email: "info@greentekenergy.co.uk",
+  address: {
+    line1: "2 Bewick Croft",
+    city: "Coventry",
+    region: "West Midlands",
+    postcode: "WF15 7NR"
+  },
+  companyNo: "13013349",
   location: "United Kingdom",
+  social: {
+    facebook: "https://www.facebook.com/share/1GrYzGrmK1/",
+    instagram: "https://www.instagram.com/greentekenergygroup?igsh=MW9jM3IyMTNoYmM3bA==",
+  },
   navLinks: [
     { label: "Home", href: "/" },
     { label: "About", href: "/about" },
@@ -54,5 +65,28 @@ export const siteConfig = {
       title: "Transparent Communication",
       description: "Clear updates and honest reporting throughout your project",
     },
+  ],
+  brands: [
+    { name: "AIKO", src: "/images/brands/aiko.png" },
+    { name: "Growatt", src: "/images/brands/growatt.png" },
+    { name: "Ideal Heating", src: "/images/brands/ideal-heating.png" },
+    { name: "InstaGen", src: "/images/brands/instagen.png" },
+    { name: "JinkoSolar", src: "/images/brands/jinko-solar.png" },
+    { name: "SolaX", src: "/images/brands/solax.png" },
+    { name: "Trinasolar", src: "/images/brands/trina-solar.png" },
+    { name: "Vaillant", src: "/images/brands/vaillant.png" },
+    { name: "Worcester Bosch", src: "/images/brands/worcester.png" },
+    { name: "SWIP", src: "/images/brands/0x0.png" },
+    { name: "Hive", src: "/images/brands/31-500x500.png" },
+  ],
+  projects: [
+    { id: 1, title: "Solar Installation", category: "Renewable Energy", src: "/images/gallery/project-01.jpg" },
+    { id: 2, title: "Home Renovation", category: "Eco-Construction", src: "/images/gallery/project-02.jpg" },
+    { id: 3, title: "Heat Pump Setup", category: "Smart Heating", src: "/images/gallery/project-03.jpg" },
+    { id: 4, title: "Exterior Insulation", category: "Energy Efficiency", src: "/images/gallery/project-04.jpeg" },
+    { id: 5, title: "Sustainable Roofing", category: "Green Build", src: "/images/gallery/project-05.jpeg" },
+    { id: 6, title: "Eco-Friendly Extension", category: "Residential", src: "/images/gallery/project-06.jpeg" },
+    { id: 7, title: "Commercial PV Array", category: "Commercial", src: "/images/gallery/project-07.jpeg" },
+    { id: 8, title: "Loft Conversion", category: "Interior", src: "/images/gallery/project-08.jpeg" },
   ],
 };

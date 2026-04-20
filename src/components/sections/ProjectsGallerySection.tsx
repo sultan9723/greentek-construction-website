@@ -1,62 +1,61 @@
+import Image from "next/image";
+import { siteConfig } from "@/data/site";
+
 export default function ProjectsGallerySection() {
-  const projects = [
-    { id: 1, title: "Modern Office Complex", category: "Commercial" },
-    { id: 2, title: "Residential Community", category: "Residential" },
-    { id: 3, title: "Industrial Facility", category: "Industrial" },
-    { id: 4, title: "Retail Development", category: "Retail" },
-    { id: 5, title: "Tech Campus", category: "Corporate" },
-    { id: 6, title: "Mixed-Use Project", category: "Development" },
-  ];
+  const featuredProjects = siteConfig.projects.slice(0, 4);
 
   return (
-    <section className="py-16 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-6xl mx-auto">
-        {/* Section Header */}
-        <div className="text-center mb-12">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-black dark:text-white mb-3">
-            Featured Projects
-          </h2>
-          <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-            Explore our portfolio of completed projects that showcase our expertise and craftsmanship.
+    <section className="py-16 md:py-20 lg:py-24 bg-white">
+      <div className="max-w-7xl mx-auto px-6">
+        <div className="text-center max-w-4xl mx-auto mb-16 md:mb-20">
+          <p className="text-[10px] font-black uppercase tracking-[0.3em] text-green-700 mb-6">
+            Proven Performance
           </p>
+          <h2 className="text-4xl font-black tracking-tight text-zinc-900 md:text-5xl lg:text-7xl leading-[1.05]">
+            Track Record of <br />
+            <span className="text-green-700">Success.</span>
+          </h2>
+          <div className="mt-10">
+            <a href="/projects" className="group inline-flex items-center gap-5 text-sm font-bold text-zinc-900">
+              View All Projects
+              <span className="w-12 h-12 rounded-full bg-zinc-900 text-white flex items-center justify-center group-hover:bg-green-700 transition-all duration-500 shadow-xl shadow-zinc-900/10">
+                <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
+              </span>
+            </a>
+          </div>
         </div>
 
-        {/* Projects Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
-          {projects.map((project) => (
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+          {featuredProjects.map((project) => (
             <div
               key={project.id}
-              className="group relative overflow-hidden rounded-lg bg-gray-200 dark:bg-zinc-800 aspect-square hover:cursor-pointer"
+              className="group relative overflow-hidden rounded-[2.5rem] bg-zinc-100 aspect-[4/5] hover:cursor-pointer transition-all duration-700 shadow-sm hover:shadow-2xl"
             >
-              {/* Placeholder Image */}
-              <div className="w-full h-full bg-gradient-to-br from-gray-300 to-gray-400 dark:from-zinc-700 dark:to-zinc-900 flex items-center justify-center">
-                <div className="text-center">
-                  <div className="text-5xl mb-2">🏗️</div>
-                  <p className="text-sm text-gray-600 dark:text-gray-400">Project Image</p>
-                </div>
+              <Image
+                src={project.src}
+                alt={project.title}
+                fill
+                className="object-cover transition-transform duration-1000 group-hover:scale-110"
+              />
+              
+              {/* Subtle Category Label - Always Visible */}
+              <div className="absolute top-6 left-6 z-10">
+                <span className="px-4 py-1.5 rounded-full bg-white/80 backdrop-blur-md text-zinc-900 text-[9px] font-black uppercase tracking-widest border border-white/20">
+                  {project.category}
+                </span>
               </div>
 
-              {/* Overlay */}
-              <div className="absolute inset-0 bg-black/0 group-hover:bg-black/50 transition-colors duration-300 flex flex-col justify-end p-6">
-                <div className="translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
-                  <h3 className="text-white text-lg font-semibold mb-1">
-                    {project.title}
-                  </h3>
-                  <p className="text-gray-300 text-sm">{project.category}</p>
-                </div>
+              {/* Title Overlay - Visible on Hover */}
+              <div className="absolute inset-0 bg-gradient-to-t from-zinc-900/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-8">
+                <h3 className="text-white text-xl font-black leading-tight translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                  {project.title}
+                </h3>
               </div>
             </div>
           ))}
-        </div>
-
-        {/* View All CTA */}
-        <div className="text-center mt-12">
-          <button className="inline-flex items-center justify-center px-8 py-3 rounded-lg bg-black dark:bg-white text-white dark:text-black font-medium hover:bg-gray-800 dark:hover:bg-gray-100 transition-colors">
-            View All Projects
-            <span className="ml-2">→</span>
-          </button>
         </div>
       </div>
     </section>
   );
 }
+
