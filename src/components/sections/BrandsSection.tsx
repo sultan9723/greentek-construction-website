@@ -119,7 +119,7 @@ export default function BrandsSection() {
       </div>
 
       {/* ── Mobile Marquee Strip (Hidden on Desktop) ── */}
-      <div className="md:hidden relative w-full overflow-hidden py-4">
+      <div className="md:hidden relative w-full overflow-hidden py-4 space-y-4">
         {/* Edge Fade Masks */}
         <div 
           className="absolute inset-y-0 left-0 w-16 z-10 pointer-events-none" 
@@ -130,18 +130,28 @@ export default function BrandsSection() {
           style={{ background: 'linear-gradient(to left, white, transparent)' }}
         />
 
-        <div className="mobile-brands-track">
-          {[...homepageBrands, ...homepageBrands].map((logo, idx) => (
+        {/* Row 1 */}
+        <div className="mobile-brands-track scroll-left-brands">
+          {[...row1, ...row1, ...row1].map((logo, idx) => (
             <div
-              key={`${logo.name}-mobile-${idx}`}
+              key={`${logo.name}-m-r1-${idx}`}
               className="mobile-brand-card"
-              aria-hidden={idx >= homepageBrands.length}
+              aria-hidden={idx >= row1.length}
             >
-              <img
-                src={logo.src}
-                alt={logo.name}
-                className="mobile-brand-img"
-              />
+              <img src={logo.src} alt={logo.name} className="mobile-brand-img" />
+            </div>
+          ))}
+        </div>
+
+        {/* Row 2 */}
+        <div className="mobile-brands-track scroll-right-brands">
+          {[...row2, ...row2, ...row2].map((logo, idx) => (
+            <div
+              key={`${logo.name}-m-r2-${idx}`}
+              className="mobile-brand-card"
+              aria-hidden={idx >= row2.length}
+            >
+              <img src={logo.src} alt={logo.name} className="mobile-brand-img" />
             </div>
           ))}
         </div>
@@ -156,21 +166,30 @@ export default function BrandsSection() {
           from { transform: translateX(0); }
           to { transform: translateX(-50%); }
         }
+        @keyframes scrollRightBrands {
+          from { transform: translateX(-50%); }
+          to { transform: translateX(0); }
+        }
         .mobile-brands-track {
           display: flex;
           align-items: center;
-          gap: 1.5rem;
+          gap: 1rem;
           width: max-content;
-          animation: scrollLeftBrands 30s linear infinite;
           will-change: transform;
+        }
+        .scroll-left-brands {
+          animation: scrollLeftBrands 25s linear infinite;
+        }
+        .scroll-right-brands {
+          animation: scrollRightBrands 30s linear infinite;
         }
         .mobile-brands-track:active {
           animation-play-state: paused;
         }
         .mobile-brand-card {
           flex-shrink: 0;
-          width: 7rem;
-          height: 4rem;
+          width: 6.5rem;
+          height: 3.5rem;
           background-color: white;
           border-radius: 0.75rem;
           border: 1px solid #f3f4f6;
@@ -178,17 +197,17 @@ export default function BrandsSection() {
           display: flex;
           align-items: center;
           justify-content: center;
-          padding: 0.75rem;
+          padding: 0.5rem;
+          transition: all 0.3s ease;
+        }
+        .mobile-brand-card:active {
+          transform: translateY(-2px);
+          box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
         }
         .mobile-brand-img {
-          max-height: 2rem;
+          max-height: 1.75rem;
           width: auto;
           object-fit: contain;
-          filter: none;
-          opacity: 1;
-          transition: filter 0.3s ease;
-        }
-        .mobile-brand-card:active .mobile-brand-img {
           filter: none;
           opacity: 1;
         }
