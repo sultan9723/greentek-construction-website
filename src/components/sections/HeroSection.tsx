@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import Image from "next/image";
 
 function useFadeIn(delay = 0) {
   const ref = useRef<HTMLDivElement>(null);
@@ -23,8 +24,19 @@ export default function HeroSection() {
 
   return (
     <section className="relative bg-zinc-900 overflow-hidden border-b border-white/5">
-      <div className="absolute inset-0 bg-[url('/images/hero-bg.jpg')] bg-cover bg-center opacity-20 mix-blend-overlay" />
-      <div className="relative mx-auto max-w-7xl px-6 py-16 md:py-24 lg:py-32 text-center">
+      {/* Optimized Background Image */}
+      <div className="absolute inset-0 z-0">
+        <Image
+          src="/images/hero-bg.jpg"
+          alt="GreenTek Construction and Energy Background"
+          fill
+          priority
+          className="object-cover opacity-20 mix-blend-overlay"
+          sizes="100vw"
+        />
+      </div>
+
+      <div className="relative z-10 mx-auto max-w-7xl px-6 py-16 md:py-24 lg:py-32 text-center">
         <div 
           ref={heroFade.ref}
           className={`max-w-3xl mx-auto transition-all duration-1000 ease-out ${
