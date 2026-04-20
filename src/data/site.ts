@@ -13,8 +13,9 @@ export const siteConfig = {
   companyNo: "13013349",
   location: "United Kingdom",
   social: {
-    facebook: "https://www.facebook.com/share/1GrYzGrmK1/",
-    instagram: "https://www.instagram.com/greentekenergygroup?igsh=MW9jM3IyMTNoYmM3bA==",
+    facebook: "https://facebook.com/greentekenergy",
+    instagram: "https://instagram.com/greentekenergy",
+    linkedin: "https://linkedin.com/company/greentekenergy",
   },
   navLinks: [
     { label: "Home", href: "/" },
