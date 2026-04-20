@@ -108,18 +108,18 @@ export default function WhyChooseUs() {
 
         {/* Stat Bar - Restored Floating Pill Style */}
         <div className="flex justify-center mb-16 md:mb-20">
-          <div className="inline-flex flex-wrap items-center justify-center gap-y-8 bg-white rounded-3xl md:rounded-full shadow-2xl shadow-green-900/5 border border-zinc-100 px-8 py-8 md:px-14 md:py-8 lg:px-20 lg:py-10">
-            <div className="flex flex-col items-center px-6 md:px-10 lg:px-14">
+          <div className="flex flex-col sm:flex-row items-center justify-center bg-white rounded-[2.5rem] md:rounded-full shadow-2xl shadow-green-900/5 border border-zinc-100 w-full md:w-auto overflow-hidden sm:overflow-visible">
+            <div className="flex flex-col items-center w-full sm:w-auto py-8 lg:py-10 px-6 md:px-10 lg:px-14 bg-white z-10">
               <span className="text-4xl md:text-5xl lg:text-6xl font-black text-green-600 leading-none tracking-tighter"><CountUp target={500} suffix="+" /></span>
               <span className="text-[10px] font-black text-zinc-400 uppercase tracking-widest mt-3">Projects Delivered</span>
             </div>
-            <div className="w-px h-16 bg-zinc-100 hidden sm:block" />
-            <div className="flex flex-col items-center px-6 md:px-10 lg:px-14">
+            <div className="w-full h-px sm:w-px sm:h-16 bg-zinc-100" />
+            <div className="flex flex-col items-center w-full sm:w-auto py-8 lg:py-10 px-6 md:px-10 lg:px-14 bg-white z-10">
               <span className="text-4xl md:text-5xl lg:text-6xl font-black text-green-600 leading-none tracking-tighter"><CountUp target={100} suffix="%" /></span>
               <span className="text-[10px] font-black text-zinc-400 uppercase tracking-widest mt-3">Director-Led Sites</span>
             </div>
-            <div className="w-px h-16 bg-zinc-100 hidden sm:block" />
-            <div className="flex flex-col items-center px-6 md:px-10 lg:px-14">
+            <div className="w-full h-px sm:w-px sm:h-16 bg-zinc-100" />
+            <div className="flex flex-col items-center w-full sm:w-auto py-8 lg:py-10 px-6 md:px-10 lg:px-14 bg-white z-10">
               <span className="text-4xl md:text-5xl lg:text-6xl font-black text-green-600 leading-none tracking-tighter"><CountUp target={3} suffix="x" /></span>
               <span className="text-[10px] font-black text-zinc-400 uppercase tracking-widest mt-3">Average Client ROI</span>
             </div>

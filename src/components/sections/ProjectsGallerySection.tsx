@@ -11,7 +11,7 @@ export default function ProjectsGallerySection() {
           <p className="text-[10px] font-black uppercase tracking-[0.3em] text-green-700 mb-6">
             Proven Performance
           </p>
-          <h2 className="text-4xl font-black tracking-tight text-zinc-900 md:text-5xl lg:text-7xl leading-[1.05]">
+          <h2 className="text-3xl sm:text-4xl font-black tracking-tight text-zinc-900 md:text-5xl lg:text-7xl leading-[1.05]">
             Track Record of <br />
             <span className="text-green-700">Success.</span>
           </h2>

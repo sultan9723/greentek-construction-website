@@ -5,7 +5,7 @@ export default function HeroSection() {
       <div className="relative mx-auto max-w-7xl px-6 py-16 md:py-24 lg:py-32 text-center">
         <div className="max-w-3xl mx-auto">
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-black tracking-tight text-white leading-[1.05]">
-            Bridging <span className="text-green-500">Construction</span> <br />
+            Bridging <span className="text-green-500">Construction</span> <br className="hidden md:block" />
             with Renewable Energy.
           </h1>
 
@@ -14,16 +14,16 @@ export default function HeroSection() {
             building upgrades and low-carbon energy solutions across the UK.
           </p>
 
-          <div className="mt-12 flex flex-wrap justify-center gap-5">
+          <div className="mt-12 flex flex-col sm:flex-row justify-center gap-4 sm:gap-5">
             <a
               href="/services"
-              className="rounded-xl bg-green-700 px-10 py-5 text-xs font-bold text-white transition hover:bg-green-600 shadow-xl shadow-green-900/40"
+              className="w-full sm:w-auto rounded-xl bg-green-700 px-8 py-4 sm:px-10 sm:py-5 text-xs font-bold text-white transition hover:bg-green-600 shadow-xl shadow-green-900/40"
             >
               Our Solutions
             </a>
             <a
               href="/contact"
-              className="rounded-xl border border-white/10 bg-white/5 px-10 py-5 text-xs font-bold text-white backdrop-blur-sm transition hover:bg-white/10"
+              className="w-full sm:w-auto rounded-xl border border-white/10 bg-white/5 px-8 py-4 sm:px-10 sm:py-5 text-xs font-bold text-white backdrop-blur-sm transition hover:bg-white/10"
             >
               Consult an Expert
             </a>
