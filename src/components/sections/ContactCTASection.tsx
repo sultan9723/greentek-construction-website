@@ -37,28 +37,28 @@ export default function ContactCTASection() {
             <div className="bg-zinc-50 py-10 px-6 md:py-16 md:px-12 rounded-[3rem] border border-zinc-100 shadow-2xl shadow-zinc-200/50">
               <h3 className="text-xl font-black text-zinc-900 mb-10 tracking-tight">Direct Contact</h3>
               
-              <div className="space-y-8">
-                <a href="mailto:info@greentekenergy.co.uk" className="flex items-center gap-6 group">
-                  <div className="w-14 h-14 rounded-2xl bg-white border border-zinc-200 flex items-center justify-center text-green-600 group-hover:bg-green-600 group-hover:text-white transition-all shadow-sm">
-                    <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <div className="space-y-6 md:space-y-8">
+                <a href="mailto:info@greentekenergy.co.uk" className="flex items-center gap-4 md:gap-6 group">
+                  <div className="w-12 h-12 md:w-14 md:h-14 shrink-0 rounded-2xl bg-white border border-zinc-200 flex items-center justify-center text-green-600 group-hover:bg-green-600 group-hover:text-white transition-all shadow-sm">
+                    <svg className="w-5 h-5 md:w-6 md:h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                     </svg>
                   </div>
-                  <div>
+                  <div className="min-w-0">
                     <p className="text-[10px] font-black uppercase tracking-widest text-zinc-400 mb-1">Email Address</p>
-                    <p className="text-zinc-900 font-bold text-lg group-hover:text-green-600 transition-colors">info@greentekenergy.co.uk</p>
+                    <p className="text-zinc-900 font-bold text-base md:text-lg group-hover:text-green-600 transition-colors break-all sm:break-normal">info@greentekenergy.co.uk</p>
                   </div>
                 </a>
 
-                <a href="tel:03335334567" className="flex items-center gap-6 group">
-                  <div className="w-14 h-14 rounded-2xl bg-white border border-zinc-200 flex items-center justify-center text-green-600 group-hover:bg-green-600 group-hover:text-white transition-all shadow-sm">
-                    <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <a href="tel:03335334567" className="flex items-center gap-4 md:gap-6 group">
+                  <div className="w-12 h-12 md:w-14 md:h-14 shrink-0 rounded-2xl bg-white border border-zinc-200 flex items-center justify-center text-green-600 group-hover:bg-green-600 group-hover:text-white transition-all shadow-sm">
+                    <svg className="w-5 h-5 md:w-6 md:h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                     </svg>
                   </div>
-                  <div>
+                  <div className="min-w-0">
                     <p className="text-[10px] font-black uppercase tracking-widest text-zinc-400 mb-1">Phone Number</p>
-                    <p className="text-zinc-900 font-bold text-lg group-hover:text-green-600 transition-colors">0333 533 4567</p>
+                    <p className="text-zinc-900 font-bold text-base md:text-lg group-hover:text-green-600 transition-colors">0333 533 4567</p>
                   </div>
                 </a>
               </div>
