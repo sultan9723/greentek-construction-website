@@ -31,7 +31,7 @@ const stats = [
   { value: "2020", label: "Established" },
   { value: "500+", label: "Projects Delivered" },
   { value: "Expertise", label: "Domestic & Commercial" },
-  { value: "Oversight", label: "Director-Led" },
+  { value: "Nationwide", label: "SERVICE ACROSS THE UK" },
 ];
 
 function CountUp({ target, suffix = "", visible }: { target: number; suffix?: string; visible: boolean }) {
@@ -139,10 +139,10 @@ export default function AboutPreview() {
 
           {/* Right - Stats Grid */}
           <div className="grid grid-cols-2 gap-4 md:gap-6">
-            <StatCard stat={{ value: "2020", label: "Established" }} delay={200} />
-            <StatCard stat={{ value: "500+", label: "Projects Delivered" }} delay={300} />
-            <StatCard stat={{ value: "Expertise", label: "Domestic & Commercial" }} delay={400} />
-            <StatCard stat={{ value: "Oversight", label: "Director-Level" }} delay={500} />
+            <StatCard stat={stats[0]} delay={200} />
+            <StatCard stat={stats[1]} delay={300} />
+            <StatCard stat={stats[2]} delay={400} />
+            <StatCard stat={stats[3]} delay={500} />
           </div>
         </div>
       </div>

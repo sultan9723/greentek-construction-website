@@ -36,10 +36,6 @@ const faqItems = [
     answer: "Yes, we maintain full compliance with industry standards. We are accredited by leading bodies such as TrustMark, HIES, CHAS, and Gas Safe, ensuring quality and peace of mind for every project."
   },
   {
-    question: "How is GreenTek different from larger contractors?",
-    answer: "We bridge the gap between traditional construction and modern energy efficiency. Our approach is director-led and agile, focusing on precision engineering and high-performance delivery rather than just scale."
-  },
-  {
     question: "How can I contact GreenTek?",
     answer: "You can reach us directly via phone at 0333 533 4567 or email us at info@greentekenergy.co.uk. Our team is ready to discuss your project requirements and provide a formal quote."
   }

@@ -124,7 +124,7 @@ export default function Header() {
       `}</style>
 
       <header className="sticky top-0 z-[60] bg-white lg:bg-white/90 lg:backdrop-blur-md border-b border-zinc-100 shadow-md lg:shadow-none">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 lg:px-6 lg:py-4">
+        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-3 lg:py-4">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3 group z-[70]">
             <Image 
