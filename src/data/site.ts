@@ -81,8 +81,8 @@ export const siteConfig = {
     { name: "Hive", src: "/images/brands/31-500x500.png" },
   ],
   projects: [
-    { id: 1, title: "Solar Installation", category: "Renewable Energy", src: "/images/gallery/project-01.jpg" },
-    { id: 2, title: "Home Renovation", category: "Property Upgrade", src: "/images/gallery/project-02.jpg" },
+    { id: 1, title: "Solar Installation", category: "Renewable Energy", src: "/images/gallery/Gemini_Generated_Image_qsil0mqsil0mqsil.png" },
+    { id: 2, title: "Home Renovation", category: "Property Upgrade", src: "/images/gallery/WhatsApp Image 2026-04-23 at 11.35.03 AM.jpeg" },
     { id: 3, title: "Heat Pump Setup", category: "Smart Heating", src: "/images/gallery/WhatsApp Image 2026-04-23 at 1.23.16 PM.jpeg" },
     { id: 4, title: "External Wall Insulation", category: "Insulation Solution", src: "/images/gallery/vc.png" },
     { id: 5, title: "Loft Conversions", category: "Vertical Expansion", src: "/images/gallery/pr.png" },
