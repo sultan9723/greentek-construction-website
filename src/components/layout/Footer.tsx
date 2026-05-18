@@ -79,7 +79,7 @@ export default function Footer() {
           <div className="space-y-4">
             <Link href="/" className="inline-block">
               <div className="relative h-12 w-40">
-                <Image src="/images/greenteklogo.jpeg" alt={siteConfig.name} fill className="object-contain object-left" priority />
+                <Image src="/images/magnific_3003063144.png" alt={siteConfig.name} fill className="object-contain object-left" priority />
               </div>
             </Link>
             <p className="text-sm text-zinc-400 leading-relaxed max-w-xs">
