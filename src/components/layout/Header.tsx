@@ -128,7 +128,7 @@ export default function Header() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3 group z-[70]">
             <Image 
-              src="/images/greenteklogo.jpeg" 
+              src="/images/magnific_3003063144.png" 
               alt="GreenTek" 
               width={180} 
               height={48} 

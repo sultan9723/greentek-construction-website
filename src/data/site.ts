@@ -5,10 +5,10 @@ export const siteConfig = {
   phone: "0333 533 4567",
   email: "info@greentekenergy.co.uk",
   address: {
-    line1: "2 Bewick Croft",
+    line1: "02 Bewick Croft",
     city: "Coventry",
     region: "West Midlands",
-    postcode: "WF15 7NR"
+    postcode: "CV2 4QR"
   },
   companyNo: "13013349",
   location: "United Kingdom",

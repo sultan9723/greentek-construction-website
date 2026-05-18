@@ -218,7 +218,7 @@ export default function ContactPage() {
             </div>
             <div className="rounded-[2.5rem] overflow-hidden border border-zinc-200 shadow-2xl shadow-zinc-200/50 h-[450px] relative bg-white p-3">
               <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2433.921387679808!2d-1.503799623326177!3d52.40810487203112!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48774b72459b6347%3A0x673418519e7a8df!2s2+Bewick+Croft%2C+Coventry%2C+WF15+7NR%2C+UK!5e0!3m2!1sen!2sus!4v1713550000000!5m2!1sen!2sus" 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2433.921387679808!2d-1.500000000000000!3d52.408105000000000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48774b70000000000%3A0x673418519e7a8df!2s02+Bewick+Croft%2C+Coventry%2C+CV2+4QR%2C+UK!5e0!3m2!1sen!2sus!4v1713550000000!5m2!1sen!2sus" 
                 width="100%" 
                 height="100%" 
                 style={{ border: 0 }} 
