@@ -28,7 +28,7 @@ export default function HeroSection() {
       <div className="absolute inset-0 z-0">
         <Image
           src="/images/hero-bg.jpg"
-          alt="GreenTek Construction and Energy Background"
+          alt="Greentek Construction and Energy Background"
           fill
           priority
           className="object-cover opacity-20 mix-blend-overlay"
@@ -48,9 +48,8 @@ export default function HeroSection() {
             with Renewable Energy.
           </h1>
 
-          <p className="mt-8 text-base md:text-lg lg:text-xl leading-relaxed text-zinc-400 max-w-2xl mx-auto">
-            GreenTek is an agile, multi-disciplinary firm delivering high-performance 
-            building upgrades and low-carbon energy solutions across the UK.
+          <p className="mt-8 text-base md:text-lg lg:text-xl leading-relaxed text-zinc-300 max-w-2xl mx-auto font-medium tracking-wide">
+            Greentek specializes in solar PV installation, air source heat pumps, boiler upgrades, property refurbishment, and building extensions across West Midlands and Wales.
           </p>
 
           <div className="mt-12 flex flex-col sm:flex-row justify-center gap-4 sm:gap-5">

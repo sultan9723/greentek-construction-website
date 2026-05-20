@@ -12,8 +12,40 @@ export const metadata: Metadata = {
     template: `%s | ${siteConfig.name}`,
   },
   description: siteConfig.description,
+  keywords: [
+    "construction",
+    "renewable energy",
+    "solar PV installation",
+    "air source heat pump",
+    "ASHP",
+    "boiler upgrade",
+    "central heating",
+    "loft insulation",
+    "external wall insulation",
+    "property refurbishment",
+    "house refurbishment",
+    "kitchen refurbishment",
+    "bathroom refurbishment",
+    "building extension",
+    "home renovation",
+    "West Midlands",
+    "Wolverhampton",
+    "Wales",
+    "construction contractor",
+    "energy solutions",
+  ],
   viewport: "width=device-width, initial-scale=1, maximum-scale=5",
   themeColor: "#15803d", // green-700
+  icons: {
+    icon: "/images/magnific_3003063144.png",
+    apple: "/images/magnific_3003063144.png",
+  },
+  openGraph: {
+    title: siteConfig.name,
+    description: siteConfig.description,
+    type: "website",
+    locale: "en_GB",
+  },
 };
 
 export default function RootLayout({

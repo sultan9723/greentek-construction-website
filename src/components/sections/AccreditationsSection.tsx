@@ -20,7 +20,6 @@ function useFadeIn(delay = 0) {
 }
 
 const accreditations = [
-  { name: "CHAS", src: "/images/accreditations/chas.png" },
   { name: "Gas Safe Register", src: "/images/accreditations/gas-safe.png" },
   { name: "HIES", src: "/images/accreditations/hies.png" },
   { name: "Quality Mark", src: "/images/accreditations/qualitymark.png" },

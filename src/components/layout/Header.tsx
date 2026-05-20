@@ -129,10 +129,10 @@ export default function Header() {
           <Link href="/" className="flex items-center gap-3 group z-[70]">
             <Image 
               src="/images/magnific_3003063144.png" 
-              alt="GreenTek" 
-              width={180} 
-              height={48} 
-              className="h-9 md:h-10 lg:h-12 w-auto object-contain"
+              alt="Greentek" 
+              width={220} 
+              height={64} 
+              className="h-11 md:h-14 lg:h-16 w-auto object-contain"
               priority
             />
           </Link>

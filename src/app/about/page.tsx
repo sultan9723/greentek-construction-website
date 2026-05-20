@@ -75,7 +75,7 @@ export default function AboutPage() {
               <span className="text-green-500">Construction & Energy</span>
             </h1>
             <p className="mt-6 text-xl text-zinc-300 max-w-2xl mx-auto leading-relaxed">
-              GreenTek is an agile, multi-disciplinary construction and energy firm, 
+              Greentek is an Agile, Multi-disciplinary construction and Energy Firm, 
               dedicated to delivering high-performance solutions for a sustainable future.
             </p>
           </div>
@@ -89,7 +89,7 @@ export default function AboutPage() {
                 <h2 className="text-3xl font-bold text-zinc-900 mb-6">Our Journey Since 2020</h2>
                 <div className="space-y-4 text-lg text-zinc-600">
                   <p>
-                    Established in 2020, GreenTek has rapidly grown into a powerhouse in the UK construction and energy sector. 
+                    Established in 2020, Greentek has rapidly grown into a powerhouse in the UK construction and energy sector. 
                     We have successfully delivered over 500 projects under major schemes including ECO3, ECO4, and LA Flex.
                   </p>
                   <p>

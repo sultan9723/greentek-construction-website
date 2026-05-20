@@ -45,7 +45,7 @@ export default function CorePillars() {
               Our Core Pillars
             </h2>
             <p className="text-zinc-500 text-lg md:text-xl max-w-3xl mx-auto mb-10 font-medium leading-relaxed">
-              Delivering sustainable excellence through integrated construction and energy solutions.
+              Delivering sustainable excellence through integrated renewable energy solutions and professional construction services including solar PV installation and heat pump technology.
             </p>
             <div className="h-1.5 w-16 bg-green-600 mx-auto rounded-full" />
           </div>

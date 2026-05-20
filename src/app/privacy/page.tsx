@@ -16,7 +16,7 @@ export default function PrivacyPage() {
             <section>
               <h2 className="text-xl font-bold text-zinc-900 mb-4 uppercase tracking-wider text-[11px]">1. Introduction</h2>
               <p>
-                GreenTek Construction ("we", "our", or "us") is committed to protecting and respecting your privacy. 
+                Greentek Construction ("we", "our", or "us") is committed to protecting and respecting your privacy. 
                 This policy sets out the basis on which any personal data we collect from you, or that you provide to us, 
                 will be processed by us.
               </p>
@@ -57,7 +57,7 @@ export default function PrivacyPage() {
               <p>
                 We may disclose your personal information to third parties if we are under a duty to disclose or share your 
                 personal data in order to comply with any legal obligation, or to protect the rights, property, or safety of 
-                GreenTek Construction, our customers, or others.
+                Greentek Construction, our customers, or others.
               </p>
             </section>
 

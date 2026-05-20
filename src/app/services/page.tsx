@@ -15,8 +15,8 @@ export default function ServicesPage() {
               Our Professional <span className="text-green-700">Services</span>
             </h1>
             <p className="mt-6 text-xl text-zinc-600 max-w-2xl mx-auto leading-relaxed font-medium">
-              From high-end commercial construction to advanced renewable energy systems, 
-              we provide comprehensive solutions tailored to your requirements.
+              From air source heat pump installation and solar PV systems to property refurbishment, loft insulation, and building extensions—
+              Greentek delivers comprehensive construction and renewable energy solutions tailored to your needs.
             </p>
             <div className="mt-8 flex justify-center">
               <div className="h-1.5 w-16 bg-green-600 rounded-full" />
@@ -77,7 +77,7 @@ export default function ServicesPage() {
           <div className="mx-auto max-w-7xl px-6 text-center relative z-10">
             <h2 className="text-3xl md:text-5xl font-black tracking-tight">Need a Custom Solution?</h2>
             <p className="mt-6 text-zinc-400 max-w-2xl mx-auto text-lg font-medium">
-              Our team of experts is ready to help you with your next project, whether it's a large-scale commercial retrofit or a domestic energy upgrade.
+              Our team of experts is ready to help with solar installations, air source heat pump conversions, boiler upgrades, property refurbishment, or building extensions across West Midlands and Wales.
             </p>
             <div className="mt-12">
               <a href="/contact" className="inline-flex items-center justify-center px-10 py-5 rounded-2xl bg-green-700 text-white font-black text-sm uppercase tracking-widest hover:bg-green-600 transition-all shadow-xl shadow-green-900/20">

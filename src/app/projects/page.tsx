@@ -67,7 +67,7 @@ export default function ProjectsPage() {
           <div className="mx-auto max-w-3xl px-6 text-center">
             <h2 className="text-3xl font-bold text-zinc-900">Have a Project in Mind?</h2>
             <p className="mt-6 text-lg text-zinc-600">
-              Join our list of satisfied clients. Let's discuss how GreenTek can bring your vision to life with quality and efficiency.
+              Join our list of satisfied clients. Let's discuss how Greentek can bring your vision to life with quality and efficiency.
             </p>
             <div className="mt-10">
               <a href="/contact" className="inline-flex items-center justify-center px-10 py-4 rounded-full bg-zinc-900 text-white font-bold hover:bg-green-700 transition-all">
