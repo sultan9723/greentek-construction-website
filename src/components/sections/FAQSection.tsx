@@ -20,24 +20,24 @@ function useFadeIn(delay = 0) {
 
 const faqItems = [
   {
-    question: "What services does GreenTek provide?",
-    answer: "We provide a holistic range of services across two core pillars: Energy & Decarbonization (Solar, Heat Pumps, Insulation) and Commercial & Domestic Construction (New builds, renovations, extensions)."
+    question: "What services does Greentek provide?",
+    answer: "We provide comprehensive services including solar PV installation, air source heat pumps, boiler upgrades, new central heating systems, loft insulation, external wall insulation, property refurbishment, kitchen refurbishment, bathroom refurbishment, and building extensions."
   },
   {
-    question: "Do you work on both domestic and commercial projects?",
-    answer: "Yes. GreenTek is an agile, multi-disciplinary firm capable of handling large-scale commercial retrofits as well as high-end domestic construction and energy upgrades."
+    question: "Do you offer air source heat pump conversions and ASHP installation?",
+    answer: "Yes. Greentek specializes in air source heat pump installation and conversions, helping homeowners transition to efficient, low-carbon heating solutions across West Midlands, Wolverhampton, and Wales."
   },
   {
-    question: "Do you offer renewable and low-carbon solutions?",
-    answer: "Absolutely. We specialize in modern energy solutions including Solar PV, Air Source Heat Pumps, and advanced insulation systems to help clients achieve their decarbonization goals."
+    question: "What insulation solutions do you offer?",
+    answer: "We provide loft insulation and external wall insulation services to improve energy efficiency, reduce utility costs, and meet building regulations for property refurbishment projects."
   },
   {
     question: "Are you accredited and compliant?",
-    answer: "Yes, we maintain full compliance with industry standards. We are accredited by leading bodies such as TrustMark, HIES, CHAS, and Gas Safe, ensuring quality and peace of mind for every project."
+    answer: "Yes, we maintain full compliance with industry standards. We are accredited by leading bodies such as TrustMark, HIES, and Gas Safe, ensuring quality and peace of mind for every solar installation, heat pump setup, and construction project."
   },
   {
-    question: "How can I contact GreenTek?",
-    answer: "You can reach us directly via phone at 0333 533 4567 or email us at info@greentekenergy.co.uk. Our team is ready to discuss your project requirements and provide a formal quote."
+    question: "How can I contact Greentek for solar, heat pump, or refurbishment projects?",
+    answer: "You can reach us directly via phone at 0333 533 4567 or email info@greentekenergy.co.uk. Our team is ready to discuss your solar PV installation, boiler upgrade, property refurbishment, or building extension project and provide a formal quote."
   }
 ];
 

@@ -12,8 +12,7 @@ export default function ContactCTASection() {
               <span className="text-green-600">Your Project?</span>
             </h2>
             <p className="mt-8 text-lg md:text-xl text-zinc-600 leading-relaxed max-w-xl text-center lg:text-left font-medium">
-              GreenTek provides professional support for large-scale construction, retrofit, and renewable energy projects. 
-              Our director-led approach ensures precision engineering and agile delivery for high-performance assets.
+              Greentek provides professional solar PV installation, air source heat pump conversions, boiler upgrades, property refurbishment, loft insulation, and building extension services across West Midlands and Wales with precision engineering and agile delivery.
             </p>
             
             <div className="mt-12 flex flex-col sm:flex-row justify-center lg:justify-start gap-5 w-full sm:w-auto">

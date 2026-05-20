@@ -64,7 +64,7 @@ export default function Footer() {
 
           {/* BLOCK 5 — Bottom bar */}
           <div className="mt-12 flex flex-col items-center">
-            <p className="text-gray-500 text-xs">© {currentYear} GreenTek Energy Ltd. All rights reserved.</p>
+            <p className="text-gray-500 text-xs">© {currentYear} Greentek Energy Ltd. All rights reserved.</p>
             <div className="flex gap-2 mt-2">
               <Link href="/privacy" className="text-green-500 text-xs">Privacy Policy</Link>
               <span className="text-gray-600 text-xs">·</span>
@@ -78,7 +78,7 @@ export default function Footer() {
           {/* Column 1 — Brand */}
           <div className="space-y-4">
             <Link href="/" className="inline-block">
-              <div className="relative h-12 w-40">
+              <div className="relative h-16 w-56">
                 <Image src="/images/magnific_3003063144.png" alt={siteConfig.name} fill className="object-contain object-left" priority />
               </div>
             </Link>

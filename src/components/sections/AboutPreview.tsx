@@ -107,8 +107,7 @@ export default function AboutPreview() {
             <span className="text-green-700">Construction & Energy.</span>
           </h2>
           <p className="mt-8 text-lg md:text-xl text-zinc-500 leading-relaxed font-medium">
-            GreenTek is an agile, multi-disciplinary firm delivering high-performance 
-            solutions for a sustainable future across the UK.
+            Greentek specializes in air source heat pumps, solar PV installation, boiler upgrades, loft insulation, external wall insulation, and comprehensive property refurbishment services across West Midlands and Wales.
           </p>
         </div>
 
@@ -126,7 +125,7 @@ export default function AboutPreview() {
             </h3>
             <div className="space-y-6">
               <p className="text-base md:text-lg text-zinc-600 leading-relaxed">
-                Established in 2020, GreenTek has delivered 500+ projects under ECO3, ECO4, and LA Flex. 
+                Established in 2020, Greentek has delivered 500+ projects under ECO3, ECO4, and LA Flex. 
                 We bridge the gap between traditional construction and modern energy efficiency.
               </p>
               <p className="text-base md:text-lg text-zinc-600 leading-relaxed">

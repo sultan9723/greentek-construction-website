@@ -25,7 +25,7 @@ export default function TermsPage() {
             <section>
               <h2 className="text-xl font-bold text-zinc-900 mb-4 uppercase tracking-wider text-[11px]">2. Services Provided</h2>
               <p>
-                GreenTek Construction provides multi-disciplinary construction and energy solutions, including but 
+                Greentek Construction provides multi-disciplinary construction and energy solutions, including but 
                 not limited to solar PV installation, heat pump setup, insulation solutions, and general construction 
                 projects. We reserve the right to modify or discontinue services at any time.
               </p>
@@ -54,7 +54,7 @@ export default function TermsPage() {
               <h2 className="text-xl font-bold text-zinc-900 mb-4 uppercase tracking-wider text-[11px]">5. Intellectual Property</h2>
               <p>
                 The materials contained in this website are protected by applicable copyright and trademark law. 
-                Unless otherwise stated, GreenTek Construction owns the intellectual property rights for all 
+                Unless otherwise stated, Greentek Construction owns the intellectual property rights for all 
                 material on this website.
               </p>
             </section>
@@ -62,7 +62,7 @@ export default function TermsPage() {
             <section>
               <h2 className="text-xl font-bold text-zinc-900 mb-4 uppercase tracking-wider text-[11px]">6. Limitation of Liability</h2>
               <p>
-                GreenTek Construction shall not be held liable for any damages that will arise with the use or 
+                Greentek Construction shall not be held liable for any damages that will arise with the use or 
                 inability to use the materials on this website, even if we have been notified orally or in writing 
                 of the possibility of such damage.
               </p>
@@ -71,7 +71,7 @@ export default function TermsPage() {
             <section>
               <h2 className="text-xl font-bold text-zinc-900 mb-4 uppercase tracking-wider text-[11px]">7. Governing Law</h2>
               <p>
-                Any claim related to GreenTek Construction's website shall be governed by the laws of England & Wales 
+                Any claim related to Greentek Construction's website shall be governed by the laws of England & Wales 
                 without regards to its conflict of law provisions.
               </p>
             </section>

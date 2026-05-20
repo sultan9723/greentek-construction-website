@@ -1,7 +1,7 @@
 export const siteConfig = {
-  name: "GreenTek Construction",
+  name: "Greentek Construction",
   description:
-    "Professional construction and building solutions with a focus on quality, reliability, and trusted project delivery.",
+    "Greentek - Leading construction and renewable energy solutions across West Midlands, Wolverhampton, and Wales. Solar PV installation, air source heat pumps, boiler upgrades, loft insulation, external wall insulation, property refurbishment, and building extensions.",
   phone: "0333 533 4567",
   email: "info@greentekenergy.co.uk",
   address: {
@@ -14,7 +14,7 @@ export const siteConfig = {
   location: "United Kingdom",
   social: {
     facebook: "https://facebook.com/greentekenergy",
-    instagram: "https://instagram.com/greentekenergy",
+    instagram: "https://www.instagram.com/greentekenergy.uk?igsh=cHk4b3VnaTdtMTRo",
     linkedin: "https://linkedin.com/company/greentekenergy",
   },
   navLinks: [
@@ -32,20 +32,20 @@ export const siteConfig = {
   ],
   services: [
     {
-      title: "Commercial Construction",
-      description: "Specialized expertise in modern commercial building projects",
+      title: "Renewable Energy & Heating",
+      description: "Air source heat pumps, solar PV installation, boiler upgrades, and new central heating systems for sustainable energy solutions",
     },
     {
-      title: "Residential Development",
-      description: "Quality residential properties built to the highest standards",
+      title: "Building Extensions & Conversions",
+      description: "Kitchen extensions, bathroom extensions, lounge extensions, and loft conversions to expand your property",
     },
     {
-      title: "Project Management",
-      description: "End-to-end project coordination and timeline management",
+      title: "Property Refurbishment",
+      description: "Complete house refurbishment, kitchen refurbishment, bathroom refurbishment, and property makeovers with expert craftsmanship",
     },
     {
-      title: "Renovation & Restoration",
-      description: "Expert restoration and refurbishment of existing structures",
+      title: "Insulation & Efficiency",
+      description: "Loft insulation, external wall insulation, and energy efficiency upgrades for reduced utility costs",
     },
   ],
   whyChooseUs: [
@@ -81,13 +81,13 @@ export const siteConfig = {
     { name: "Hive", src: "/images/brands/31-500x500.png" },
   ],
   projects: [
-    { id: 1, title: "Solar Installation", category: "Renewable Energy", src: "/images/gallery/Gemini_Generated_Image_qsil0mqsil0mqsil.png" },
-    { id: 2, title: "Home Renovation", category: "Property Upgrade", src: "/images/gallery/WhatsApp Image 2026-04-23 at 11.35.03 AM.jpeg" },
-    { id: 3, title: "Heat Pump Setup", category: "Smart Heating", src: "/images/gallery/WhatsApp Image 2026-04-23 at 1.23.16 PM.jpeg" },
-    { id: 4, title: "External Wall Insulation", category: "Insulation Solution", src: "/images/gallery/vc.png" },
-    { id: 5, title: "Loft Conversions", category: "Vertical Expansion", src: "/images/gallery/pr.png" },
-    { id: 6, title: "Building Extensions", category: "Residential", src: "/images/gallery/pr7.png" },
-    { id: 7, title: "Commercial PV Systems", category: "Commercial", src: "/images/gallery/xyz.png" },
-    { id: 8, title: "Loft Conversion", category: "Interior", src: "/images/gallery/xyzw.png" },
+    { id: 1, title: "Solar PV Installation", category: "Renewable Energy", src: "/images/gallery/Gemini_Generated_Image_qsil0mqsil0mqsil.png" },
+    { id: 2, title: "Property Refurbishment", category: "House Makeover", src: "/images/gallery/WhatsApp Image 2026-04-23 at 11.35.03 AM.jpeg" },
+    { id: 3, title: "Air Source Heat Pump Installation", category: "Heating System", src: "/images/gallery/WhatsApp Image 2026-04-23 at 1.23.16 PM.jpeg" },
+    { id: 4, title: "External Wall Insulation", category: "Efficiency Solution", src: "/images/gallery/vc.png" },
+    { id: 5, title: "Loft Conversion", category: "Extension", src: "/images/gallery/pr.png" },
+    { id: 6, title: "Building Extension", category: "Residential", src: "/images/gallery/pr7.png" },
+    { id: 7, title: "Commercial Solar Installation", category: "Renewable Energy", src: "/images/gallery/xyz.png" },
+    { id: 8, title: "Bathroom Refurbishment", category: "Interior", src: "/images/gallery/xyzw.png" },
   ],
 };
